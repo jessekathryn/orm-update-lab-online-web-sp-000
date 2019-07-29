@@ -17,7 +17,7 @@ attr_reader :id
     name = row[1]
     grade = row[2]
    
-    new_student = self.new
+    new_student = self.new(id, name, grade)
   end
  
   def self.create_table
