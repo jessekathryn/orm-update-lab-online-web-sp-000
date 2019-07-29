@@ -12,11 +12,10 @@ attr_reader :id
   end
   
   def self.new_from_db(row)
-    new_student = self.new
     
     id = row[0]
     name = row[1]
-    new_student.grade = row[2]
+    grade = row[2]
    
     new_student = self.new(id, name, grade)
   end
