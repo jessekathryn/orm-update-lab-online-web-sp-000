@@ -12,6 +12,7 @@ attr_reader :id
   end
   
   def self.new_from_db(row)
+    new_student = self.new
     
     id = row[0]
     new_student.name = row[1]
